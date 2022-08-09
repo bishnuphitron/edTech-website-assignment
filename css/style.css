@@ -18,13 +18,31 @@ body{
 .dark-img img{
   height: 700px;
 }
-.slider-caption{
+.slider-caption,
+.courses-div{
   width: 60%;
 }
+
 
 /* -------------------
     Media Queries 
 -----------------------*/
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .dark-img img{
+    height: 450px;
+  }
+  .slider-caption{
+    width: 80%;
+  }
+  .courses-div{
+    width: 90%;
+  }
+  .course-main-title{
+    font-size: 30px;
+  }
+}
+
 /* `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
   .dark-img img{
@@ -33,17 +51,17 @@ body{
   .slider-caption{
     width: 90%;
   }
+  .course-main-title{
+    font-size: 20px;
+  }
 }
 
 /* `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) { 
-  .dark-img img{
-    height: 450px;
-  }
-  .slider-caption{
-    width: 80%;
-  }
-  .slider-title{
+  
+  /* .slider-title{
     font-size: 40px;
-  }
+  } */
+  
 }
+
